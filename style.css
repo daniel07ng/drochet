@@ -30,7 +30,7 @@ body{
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: green;
+    background-color:rgb(209, 101, 101) ;
     transition: 0.5s ease;
     z-index: 1;
     justify-content: center;
