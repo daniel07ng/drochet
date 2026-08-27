@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-1: white;
+    --text-color: black;
+    --accent-color:red;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: block;
+    background-image: linear-gradient(to bottom, rgb(249, 185, 185), rgb(249, 155, 155),rgb(235, 128, 128) );;
+    
+}
+
+/*navbar*/
+.navbar{
+    display: flex;
+    opacity:1;
+    height: min(5vh, 40px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(209, 101, 101);
+    transition: 0.5s ease;
+    z-index: 1;
+    justify-content: center;
+}
+    .navbar:hover{
+        opacity: 1;
+    }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        font-size: clamp(0.5rem, 2vh, 1rem);
+        justify-content: center;
+        align-items: center;
+        gap: clamp(10px, 4vw, 50px)    
+    }
+        
+    .navbar ul li a{
+        text-decoration: none;
+        color: var(--text-color);
+        transition: 0.3s ease;
+        font-weight:700;
+     }
+        .navbar ul li a:hover{
+            color: white;
+        }
+       
+            
+        
+
+/*first section*/
+.first-section{
+    display: flex;  
+    height: 60vh;
+    margin-top: 0px;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+    .first-section #caption-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+        .first-section #caption-page #caption-page-first{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 15%;
+            text-align: center;
+            gap: clamp(5px, 6, 10px);
+
+        }
+        
+        .first-section #caption-page  h1{
+        font-size: clamp(0.75rem, 7vh, 3.125rem);
+        color: var(--text-color); 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .first-section #caption-page p{
+            font-size: clamp(0.75rem, 5vh, 1.2rem);
+            color: var(--text-color);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+#first-hr{
+    background-color: rgb(157, 54, 54);
+    height:1px;
+    width:clamp(150px,200px, 500px);
+    border: none;
+
+}
+    
+#second-hr{
+    width:clamp(300px,90vw, 700px) ;
+    background-color: rgb(157, 54, 54);
+    height:1px;
+    border: none;
+}
+            
+      
+         #mybuttons{
+            display: grid;
+            position: absolute;
+           
+            top: max(25%, 250px);
+            text-align: center;
+            column-gap: 0px;
+            grid-template-columns: 1fr 1.5fr;
+            height: 20vh;
+            align-items: center;
+            justify-content: center;
+            width: max(35%, 390px);
+            margin-left: 5%;
+            border: 1px solid black;
+    }
+ 
+    #get-started, #learn-more, #recommended, #contact-me{
+        background-color: rgba(179, 75, 75, 0.801);
+        color: var(--text-color);
+        border: none;
+        cursor: pointer;
+        border-radius: 2rem;
+        font-weight: 500;
+        height: 3.125rem;
+        
+        font-size: clamp(0.5rem, 16px, 25px);
+        
+        
+    }
+        #get-started{
+            width: 60%;
+            height: 3rem;
+            
+        }
+        #learn-more{
+            width: 80%;
+            height: 3rem;
+        }
+        #recommended{
+            width:80%;
+            height: 3rem;
+        }
+            #get-started:hover, #learn-more:hover, #recommended:hover, #contact-me:hover{
+                color: rgba(255, 255, 255, 0.777);
+            }
+        #contact-me{
+            width: 60%;
+            height: 3rem;
+
+        }
+        
+
+/*introducing section*/
+    #introducing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: max(5vh, 50px);
+    margin-bottom: 10px;
+    
+    
+    
+    }
+    #third-hr{
+    height:1px;
+    position: relative;
+    top:max(5vh, 50px);
+    background-color: rgb(157, 54, 54);
+    height:1px;
+    width:max(65%,380px);
+    border: none;
+    margin: auto;
+
+    }
+    #hr-4{
+    position: relative ;
+    top: max(8vh, 50px);
+    background-color: rgb(157, 54, 54);
+    height:1px;
+    width:max(65%,380px);
+    border: none;
+    margin: auto;
+    }
+     
+
+
+    #introducing #question-1{
+        font-size: clamp(0.75rem, 2rem, 3rem);
+        color: var(--text-color);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+        
+    
+    #introducing #first-p{
+        font-weight: 500;
+        margin-left: max(20%,20px);
+        margin-right: max(20%,20px);
+        text-align: justify;
+        
+    }
+
+  
+    
+    #introducing #question-2{
+        font-size: min(5vw, 20px);
+        color: var(--text-color);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        
+    }
+    #introducing #second-p{
+    padding-left: 0;
+    font-weight: 500;
+    width: 60vw;
+    text-align: left;
+
+    }
+
+
+    #crochet-supplies {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 500;
+    text-align: left;
+    width: 60vw;
+   
+
+
+}
+        #crochet-supplies li::before {
+            content: "\2022"; /* Bullet symbol */
+            color: black; /* Desired bullet color */
+            font-weight: 500;
+
+        }
+
+    #introducing #question-3{
+        font-size: 20px;
+        color: var(--text-color);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+        margin-top: 20px;
+        
+    }
+    #introducing #third-p{
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: justify;
+        font-weight: 500;
+        
+    }
+    #introducing #question-4{
+        font-size: 20px;
+        color: var(--text-color);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+        margin-top: 20px;
+        
+    }
+    #introducing #fourth-p{
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: justify;
+        font-weight: 500;
+        
+    }
+
+       
+    
+    
+    
