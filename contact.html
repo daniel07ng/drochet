@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch about custom crochet orders, pattern questions, or just to say hi.">
+    <!-- Once this site is live on a real domain, prefix the og:image / twitter:image paths below with that domain — relative paths don't reliably resolve for social-media crawlers. -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Crochet with me - Contact">
+    <meta property="og:description" content="Get in touch about custom crochet orders, pattern questions, or just to say hi.">
+    <meta property="og:image" content="imgs/flower.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Crochet with me - Contact">
+    <meta name="twitter:description" content="Get in touch about custom crochet orders, pattern questions, or just to say hi.">
+    <meta name="twitter:image" content="imgs/flower.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Crochet with me - Contact</title>
+</head>
+<body id="contact-html">
+
+    
+    <div class="navbar">
+        <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.navbar ul').classList.toggle('open'); this.classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" id="products">Products</a></li>
+            <li><a href="patterns.html">Patterns</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </div>
+    <div id="contact-container">
+        <div id="contact-info">
+            <h2>Let's create together</h2>
+            <p>Have a question about a pattern, want a custom order, or just want to say hi? Send a message below — I read every one.</p>
+            <ul id="contact-social">
+                <li><a href="https://www.instagram.com/dlocmen?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.pinterest.com/dlocmen/" aria-label="Pinterest" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest"></i> Pinterest</a></li>
+                <li><a href="https://www.facebook.com/dlocmen" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            </ul>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact">
+            <div id="caption-message">
+                <h2>Contact</h2>
+                <p>Send me a message</p>
+            </div>
+
+            <input type="hidden" name="access_key" value="76206cda-67ad-4ec3-bc36-adc70a40c764">
+            <input type="text" name="name" placeholder="Your name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Your email" class="contact-input" required>
+            <textarea name="message" placeholder="Your message" class="contact-input" required ></textarea>
+            <div class="h-captcha" data-captcha="true"></div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <footer>
+        <div id="links">
+            <div id="background-footer"></div>
+            <h4>Quick links</h4>
+            <li>
+                <a href="patterns.html">Tip & Tutorials</a>
+                <a href="contact.html">Contact me</a>
+            </li>
+            <li id="social-links">
+                <a href="https://www.instagram.com/dlocmen?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/dlocmen/" aria-label="Pinterest" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://www.facebook.com/dlocmen" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+
+        </div>
+    </footer>
+</body>
+    
+        
+    
